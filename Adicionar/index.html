@@ -27,26 +27,36 @@
     <main>
       <h2>Adicionar nova peça ao estoque</h2>
       <section>
-        <form>
+        <form id="add-product-form">
           <div class="form-left-side">
-            <label for="">Nome da peça</label>
-            <input type="text" placeholder="Nome" required />
-            <label for="">Imagem</label>
-            <input type="text" placeholder="Imagem" required />
-            <label for="">Descrição</label>
-            <input type="text" placeholder="Descrição" required />
+            <label for="name">Nome da peça</label>
+            <input id="name" type="text" placeholder="Nome" required />
+            <label for="image">Imagem</label>
+            <input id="image" type="text" placeholder="Imagem" required />
+            <label for="description">Descrição</label>
+            <input
+              id="description"
+              type="text"
+              placeholder="Descrição"
+              required
+            />
           </div>
           <div class="form-right-side">
-            <label for="">Preço</label>
-            <input type="text" placeholder="Preço" required />
-            <label for="">Categorias</label>
-            <input type="text" placeholder="Categorias" required />
-            <label for="">Avaliação</label>
-            <input type="text" placeholder="Avaliação" required />
+            <label for="price">Preço</label>
+            <input id="price" type="text" placeholder="Preço" required />
+            <label for="category">Categorias</label>
+            <input
+              id="category"
+              type="text"
+              placeholder="Categorias"
+              required
+            />
+            <label for="rating">Avaliação</label>
+            <input id="rating" type="text" placeholder="Avaliação" required />
           </div>
         </form>
         <div class="button">
-          <button>Criar peça</button>
+          <button type="submit" form="add-product-form">Criar peça</button>
         </div>
       </section>
     </main>
@@ -78,5 +88,6 @@
         Brasil.
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
