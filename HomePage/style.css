@@ -68,6 +68,9 @@ main button {
 main section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 75rem;
   gap: 2.4375rem;
 }
 
@@ -75,13 +78,14 @@ main section .product {
   display: flex;
   flex-direction: column;
   position: relative;
+  max-width: 22rem;
   box-shadow: 8px 8px 8px 0px #00000040;
 }
 
 .product-header {
   display: flex;
   flex-direction: row;
-  gap: 8.5rem;
+  gap: 7rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -153,10 +157,6 @@ main section .product {
   color: #8cbf26;
   font-size: 32px;
 }
-
-/* .description-titles {
-  padding-left: 1rem;
-} */
 
 .description-content {
   display: flex;
