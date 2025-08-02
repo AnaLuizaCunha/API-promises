@@ -36,9 +36,9 @@ function renderProducts() {
               <div class="delete">
                 <img src="../assets/delete-icon.png" alt="Icone de deletar" />
               </div>
-              <div class="edit">
+              <a href="../Editar/index.html?id=${product.id}" class="edit">
                 <img src="../assets/edit-icon.png" alt="Icone de editar" />
-              </div>
+              </a>
             </div>
           </div>
           <div class="product-content">

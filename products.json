@@ -41,14 +41,13 @@
       "rating": 3.8
     },
     {
-      "id": 5,
       "name": "Camiseta Svelte",
-      "price": 28.27,
+      "price": "28.28",
       "image": "https://via.placeholder.com/150?text=Camiseta+Svelte",
       "category": "Acessórios",
       "description": "Qualidade premium.",
-      "inStock": true,
-      "rating": 3.4
+      "rating": "3.4",
+      "id": 5
     },
     {
       "id": 6,

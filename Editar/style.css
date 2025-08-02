@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------ HEADER ------------ */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #415fce;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+header img {
+  width: 6.875rem;
+  height: 6.1875rem;
+}
+
+header h1 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+header button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 19.6875rem;
+  height: 3.75rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #1f9b5f;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+header button img {
+  height: 2.5rem;
+  width: 2.46875rem;
+}
+
+/* ------------ MAIN ------------ */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  font-family: Inter, sans-serif;
+  padding-bottom: 4rem;
+}
+
+main h2 {
+  font-size: 48px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  padding-top: 4rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6875rem;
+  background-color: #247bb1;
+  border-radius: 12px;
+  padding: 3.125rem 4rem;
+}
+main section form {
+  display: flex;
+  gap: 6.375rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-left-side,
+.form-right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-left-side label,
+.form-right-side label {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.form-left-side input,
+.form-right-side input {
+  background-color: #f0ebeb;
+  border: none;
+  border-radius: 12px;
+  width: 28.75rem;
+  height: 4rem;
+  padding-left: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.button button {
+  border: none;
+  background-color: #1f9b5f;
+  border-radius: 12px;
+  padding: 0.5rem 1.5625rem 0.5rem 1.5625rem;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ------------ FOOTER ------------ */
+
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4.3125rem;
+  padding-right: 4.3125rem;
+  background-color: #fcf7f8;
+  padding-top: 1.75rem;
+  padding-bottom: 1.25rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.address h4,
+.contact-text h4 {
+  color: #4e8098;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.address p,
+.contact-text p {
+  color: #274553;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #415fce;
+  height: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
