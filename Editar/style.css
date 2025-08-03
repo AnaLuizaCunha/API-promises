@@ -40,6 +40,7 @@ header button {
   border: none;
   border-radius: 24px;
   cursor: pointer;
+  letter-spacing: -0.2px;
 }
 
 header button img {
@@ -118,6 +119,7 @@ main section form {
   font-weight: 500;
   color: #ffffff;
   cursor: pointer;
+  letter-spacing: -0.2px;
 }
 
 /* ------------ FOOTER ------------ */
@@ -148,7 +150,7 @@ footer section {
   color: #4e8098;
   font-size: 24px;
   font-weight: 500;
-  letter-spacing: 4px;
+  letter-spacing: 0.96px;
 }
 
 .address p,
@@ -156,7 +158,7 @@ footer section {
   color: #274553;
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 
 .contact {
@@ -179,5 +181,5 @@ footer .copyright {
   height: 2rem;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 0.8px;
 }

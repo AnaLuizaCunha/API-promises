@@ -29,11 +29,11 @@ function renderProducts() {
     const productToRender = `<div class="product">
           <div class="product-header">
             <div class="rating">
-              <p>${product.rating.toFixed(2)}</p>
+              <p>${parseFloat(product.rating).toFixed(2)}</p>
               <img src="../assets/Star.png" alt="Icone de estrela" />
             </div>
             <div class="actions">
-              <div class="delete">
+              <div class="delete" data-id="${product.id}">
                 <img src="../assets/delete-icon.png" alt="Icone de deletar" />
               </div>
               <a href="../Editar/index.html?id=${product.id}" class="edit">
@@ -52,13 +52,16 @@ function renderProducts() {
                 <p>
                   ${product.description}
                 </p>
-                <span>R$ ${product.price.toFixed(2).replace(".", ",")}</span>
+                <span>R$ ${parseFloat(product.price)
+                  .toFixed(2)
+                  .replace(".", ",")}</span>
               </div>
             </div>
           </div>
         </div>`;
     section.innerHTML += productToRender;
   });
+  addDeleteEvent();
 }
 
 function renderPagination() {
@@ -159,6 +162,30 @@ function calcButtonsPagination(totalParesParameter) {
     }
   }
   return { leftNumbers, rightNumbers };
+}
+
+async function deleteProduct(id) {
+  const url = `http://localhost:3000/products`;
+  try {
+    const response = await fetch(`${url}/${id}`, {
+      method: "DELETE",
+    });
+  } catch (error) {
+    console.error("Erro ao deletar produto:", error);
+  }
+}
+
+function addDeleteEvent() {
+  const deleteButton = document.querySelectorAll(".delete");
+  deleteButton.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const productCard = e.currentTarget.closest(".product");
+      const productId = e.currentTarget.dataset.id;
+      deleteProduct(productId).then(() => {
+        productCard.remove();
+      });
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {

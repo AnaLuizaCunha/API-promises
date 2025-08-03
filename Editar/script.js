@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     descriptionInput.value = product.description;
     ratingInput.value = product.rating;
   } catch (error) {
-    console.log("Erro ao buscar produto:", error);
+    console.error("Erro ao buscar produto:", error);
   }
 
   form.addEventListener("submit", async (e) => {
