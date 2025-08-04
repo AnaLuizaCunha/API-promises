@@ -250,16 +250,6 @@
       "rating": 4.6
     },
     {
-      "id": 26,
-      "name": "Moletom Django",
-      "price": 31.17,
-      "image": "https://via.placeholder.com/150?text=Moletom+Django",
-      "category": "Tecnologia",
-      "description": "Qualidade premium.",
-      "inStock": true,
-      "rating": 3.4
-    },
-    {
       "id": 27,
       "name": "Moletom Django",
       "price": 53.19,
@@ -460,16 +450,6 @@
       "rating": 4.6
     },
     {
-      "id": 47,
-      "name": "Mousepad CSS",
-      "price": 32.56,
-      "image": "https://via.placeholder.com/150?text=Mousepad+CSS",
-      "category": "Roupas",
-      "description": "Ideal para desenvolvedores.",
-      "inStock": true,
-      "rating": 4.4
-    },
-    {
       "id": 48,
       "name": "Camisa Laravel",
       "price": 70.28,
@@ -488,16 +468,6 @@
       "description": "Ideal para desenvolvedores.",
       "inStock": false,
       "rating": 4.6
-    },
-    {
-      "id": 50,
-      "name": "Camisa Express",
-      "price": 73.88,
-      "image": "https://via.placeholder.com/150?text=Camisa+Express",
-      "category": "Canecas",
-      "description": "Design moderno e geek.",
-      "inStock": true,
-      "rating": 4.3
     }
   ]
 }
